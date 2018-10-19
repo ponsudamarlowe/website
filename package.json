@@ -6,7 +6,7 @@
   "scripts": {
     "serve": "parcel index.html --port $PORT --log-level 3",
     "prebuild": "rm -rf dist && cp -R ./assets ./dist",
-    "build": "parcel build index.html",
+    "build": "parcel build --no-content-hash index.html",
     "bundle-experiment": "node bundler.js"
   },
   "repository": {
